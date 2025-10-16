@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="449dp"
+        android:layout_height="301dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/teenwolffundo" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="45dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/textviewSerie"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textViewMinhaLista"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minha Lista"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewFilme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewFilme"
+        app:layout_constraintTop_toTopOf="@+id/textViewFilme" />
+
+    <TextView
+        android:id="@+id/textViewFilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Filmes"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="@+id/textviewSerie"
+        app:layout_constraintEnd_toStartOf="@+id/textViewMinhaLista"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textviewSerie"
+        app:layout_constraintTop_toTopOf="@+id/textviewSerie" />
+
+    <TextView
+        android:id="@+id/textviewSerie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Séries"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView"
+        app:layout_constraintEnd_toStartOf="@+id/textViewFilme"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageViewNomeFilme"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineInferiorHorizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guidelineSuperiorHorizontal"
+        app:layout_constraintVertical_bias="0.061"
+        app:srcCompat="@drawable/teenwolflogodois" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineSuperiorHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineInferiorHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+
+    <TextView
+        android:id="@+id/textViewpalavra1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adolescente"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewpalavra2"
+        app:layout_constraintEnd_toStartOf="@+id/textViewpalavra2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/textViewpalavra2" />
+
+    <TextView
+        android:id="@+id/textViewpalavra2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Ficção"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintEnd_toStartOf="@+id/textViewpalavra3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewpalavra1"
+        app:layout_constraintTop_toTopOf="@+id/guidelineInferiorHorizontal" />
+
+    <TextView
+        android:id="@+id/textViewpalavra3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lobisomem"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewpalavra2"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/textViewpalavra2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEsquerda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineDireita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <Button
+        android:id="@+id/btAssistir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/primaria"
+        android:drawableLeft="@drawable/play_1003_svgrepo_com"
+        android:text="Assistir"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDetalhes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/buttonMinhaLista"
+        app:layout_constraintTop_toBottomOf="@+id/textViewpalavra2" />
+
+    <Button
+        android:id="@+id/buttonMinhaLista"
+        android:layout_width="116dp"
+        android:layout_height="65dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/plus_svgrepo_com"
+        android:text="MINHA LISTA"
+        android:textSize="10sp"
+        app:iconSize="5sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btAssistir"
+        app:layout_constraintEnd_toStartOf="@+id/btAssistir"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toTopOf="@+id/btAssistir"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/buttonDetalhes"
+        android:layout_width="98dp"
+        android:layout_height="63dp"
+        android:backgroundTint="@android:color/transparent"
+        android:drawableTop="@drawable/information_circle_svgrepo_com"
+        android:padding="0dp"
+        android:text="DETALHES"
+        app:iconSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btAssistir"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btAssistir"
+        app:layout_constraintTop_toTopOf="@+id/btAssistir"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textViewLancamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Lançamento"
+        android:textColor="@color/menu_navegacao"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/btAssistir" />
+
+    <ImageView
+        android:id="@+id/imageViewTheGoonies"
+        android:layout_width="119dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewPLL"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/imageViewPLL"
+        app:layout_constraintTop_toTopOf="@+id/imageViewPLL"
+        app:srcCompat="@drawable/thegoonies" />
+
+    <ImageView
+        android:id="@+id/imageViewPLL"
+        android:layout_width="119dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewtsitp"
+        app:layout_constraintEnd_toStartOf="@+id/imageViewTheGoonies"
+        app:layout_constraintStart_toEndOf="@+id/imageViewtsitp"
+        app:layout_constraintTop_toTopOf="@+id/imageViewtsitp"
+        app:srcCompat="@drawable/pll" />
+
+    <ImageView
+        android:id="@+id/imageViewtsitp"
+        android:layout_width="119dp"
+        android:layout_height="71dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/textViewLancamento"
+        app:srcCompat="@drawable/tsitp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="212dp"
+        android:text="GABRIEL POLONI SIQUEIRA"
+        android:textColor="@color/menu_navegacao"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineDireita"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/guidelineEsquerda"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewPLL"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
