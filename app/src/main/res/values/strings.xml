@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">NetflixCerto</string>
+    <string name="s_ries">Séries</string>
+    <string name="minha_lista">Minha Lista</string>
+    <string name="filmes">Filmes</string>
+    <string name="adolescente">Adolescente</string>
+    <string name="fic_o">Ficção</string>
+    <string name="lobisomem">Lobisomem</string>
+    <string name="minha_lista_button">MINHA LISTA</string>
+    <string name="assistir">ASSISTIR</string>
+    <string name="detalhes">DETALHES</string>
+    <string name="lan_amento">Lançamento</string>
 </resources>

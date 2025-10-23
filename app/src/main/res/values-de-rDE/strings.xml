@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">NetflixCerto</string>
+    <string name="s_ries">Serie</string>
+    <string name="minha_lista">Meine Liste</string>
+    <string name="filmes">Film</string>
+    <string name="adolescente">Teenager</string>
+    <string name="fic_o">Fiktion</string>
+    <string name="lobisomem">Werwolf</string>
+    <string name="minha_lista_button">MEINE LIST</string>
+    <string name="assistir">SPIELEN</string>
+    <string name="detalhes">DETAILLIEREN</string>
+    <string name="lan_amento">Neu</string>
+</resources>
